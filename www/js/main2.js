@@ -1,4 +1,8 @@
 window.onload = function(){
+  var i;
+  for(i = 0; i < localStorage.length; i++){
+    lista.push(localStorage.key(i));
+  }
     nazivVal = document.getElementById("nazivVal");
     autorVal = document.getElementById("autorVal");
     godinaVal = document.getElementById("godinaVal");
@@ -21,6 +25,7 @@ var zahtjev;
 var zahtjev;
 var flagNatrag = true;
 var flagNaprijed = true;
+var lista = [];
 
 function postaviPjesmu(br)
 {
@@ -55,6 +60,7 @@ function postaviPjesmu(br)
 function povecaj()
 {
   brojac += 1;
+  console.log(brojac);
   if(brojac > localStorage.length - 1){brojac = localStorage.length - 1}
   if(brojac == localStorage.length - 1){
   console.log(brojac);
@@ -72,6 +78,8 @@ function povecaj()
 
 function smanji(){
   brojac -= 1;
+  console.log(brojac);
+  console.log(lista);
   if(brojac < 0){brojac = 0;}
   if(brojac == 0){
     console.log(brojac);
@@ -102,13 +110,27 @@ function povratakGlavna(){
 }
 
 function obrisi(){
-  localStorage.removeItem(brojac);
-  brojac -= 1;
-  if(brojac < 0){
-    povratakGlavna();
-    return false;
+  console.log(brojac);
+  localStorage.removeItem(lista[brojac]);
+  lista.splice(brojac,1);
+  console.log(lista);
+  if(localStorage.length == 0){
+    povratakGlavna(brojac);
   }
+  else if(brojac == 0 && localStorage.length != 0){
+    brojac = 0;
+    console.log("ovoj je "+brojac);
+    if(brojac > localStorage.length - 1)
+    {
+      console.log("ušlo");
+      brojac = localStorage.length - 1
+    console.log(brojac);}
+    postaviPjesmu(brojac);
+  }else if(brojac != 0 && localStorage.length != 0){
+    brojac -= 1;
+    if(brojac < 0){brojac = 0;}
   postaviPjesmu(brojac);
+  }
 }
 
 function fadeIn(element, element2){
