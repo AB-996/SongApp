@@ -1,0 +1,82 @@
+
+html{
+  height: 100%;
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+body{
+  min-height:100%;
+  background-image: url("https://wallpaperscraft.com/image/gramophone_player_vinyl_102795_3840x2160.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Actor";
+  text-align:center;
+  margin: 0px;
+  padding: 0px;
+  overflow:hidden;
+}
+
+#dodaj{
+  text-align: center;
+}
+
+lable{
+  display: block;
+}
+
+input{
+  display:block;
+  width: 80%;
+  height: 25px;
+  margin:1% auto;
+  border:2px solid skyblue;
+  border-radius: 4%;
+  text-align:center;
+}
+
+
+#app #dodaj button{
+  font-family: "Actor";
+  font-size:1.2em;
+  margin-top:1em;
+  padding: 1em 1em;
+  border-radius:10%;
+  max-height:80px;
+  max-width:100px;
+  color:white;
+  border: 2px solid #ffa260;
+  color: black;
+  background:none;
+  cursor:pointer;
+}
+
+#app #dodaj button:hover{
+  box-shadow: 0 0.5em 0.5em -0.4em yellow;
+  transform: translateY(-0.25em);
+  border: 2px solid yellow;
+  color:black;
+}
+
+#info{
+  font-size:3em;
+  margin-top:10px;
+  color:black;
+}
+
+footer{
+  background-color: black;
+  color:white;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 2%;
+  text-align: center;
+  font-family: "Actor";
+  width:100%;
+}
+
+footer img{
+  padding-left: 30px;
+}

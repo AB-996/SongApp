@@ -1,0 +1,125 @@
+html{
+  height:100%;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  min-height:100%;
+  font-family:"Actor";
+  background-image: url("https://i.pinimg.com/originals/c2/ea/c3/c2eac33b23a5f42e25128b5c04ca19b0.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin: 0px;
+  padding: 0px;
+  overflow:hidden;
+}
+
+body h1{
+    color:white;
+}
+
+
+textarea{
+  width:20px;
+  height: 20px;
+}
+
+.nazivi{
+  width:49%;
+  float:left;
+  background-color:#FFFFC0;
+  margin-top:10px;
+  border: 1px solid black;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  max-height:150px;
+  font-size:1.7em;
+  text-align:center;
+}
+
+.vrijednosti{
+  width:49%;
+  float:left;
+  background-color:#D58C70;
+  margin-top:10px;
+  border: 1px solid black;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  max-height:200px;
+  font-size:1.7em;
+  text-align:center;
+}
+
+button{
+  font-family: "Actor";
+  margin-top:10px;
+  padding: 1em 1em;
+  border-radius:10%;
+  max-height:80px;
+  max-width:100px;
+  color:white;
+  border: 2px solid grey;
+  background:none;
+  cursor:pointer;
+}
+
+button:hover{
+  background-color:#C0C000;
+  color:black;
+  border:2px solid black;
+  transition: 0.5s;
+}
+
+#obrisi, #obrisi:hover{
+  background-color:#800000;
+  color:black;
+}
+
+#interakcija{
+  width:100%;
+}
+
+.trecina{
+  float:left;
+  width:33.333333%;
+  text-align:center;
+}
+
+
+#botuniAkcije{
+  width:100%;
+  text-align:center;
+}
+
+#videoPjesma{
+  width:100%;
+  text-align:center;
+}
+
+embed{
+  width:400px;
+  height:300px;
+  margin-top:20px;
+  border-radius:10%;
+  border:1px solid white;
+}
+
+footer{
+  background-color: black;
+  color:white;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 2%;
+  text-align: center;
+  font-family: "Actor";
+  width:100%;
+}
+
+footer img{
+  padding-left: 30px;
+}

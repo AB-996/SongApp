@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Dodavanje Pjesama</title>
+        <link href="css/glavniStil.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="js/main.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+        <!-- <link rel="stylesheet"href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+        <div id="app">
+          <h1>Dodaj Pjesmu</h1>
+          <div id="dodaj" style="text-align:center">
+              <lable for="idPodatka">Trenutni ID:</lable>
+               <input id="idPodatka" type="text" style="text-align:center;text-weight:bold" disabled/>
+               <lable for="nazivPjesma">Naziv pjesme:</lable>
+               <input id="nazivPjesma" type="text" required/>
+               <lable for="nazivAutor">Ime autora:</lable>
+               <input id="nazivAutor" type="text" required/>
+               <lable for="godina">Godina:</lable>
+               <input id="godina" type="text" required/>
+               <button id="dodajPjesmu"/>Dodaj pjesmu</button>
+               <button id="prikaziPopis">Prikaži popis</button>
+               <button id="brisi">Obriši popis</button>
+              <div id="info">
+              </div>
+          </div>
+        </div>
+        <footer>
+          Alen Bašić - Prirodoslovno-matematički fakultet u Splitu<img
+          src="http://www.pmfst.unist.hr/wp-content/uploads/2014/06/Logotip2.png" alt="pmf" width="50" height="50">
+        </footer>
+
+    </body>
+</html>
