@@ -37,10 +37,10 @@ function dodajPjesmu()
     localStorage.setItem(idPodatka, objekt);
     idPodatka += 1;
     idInput.value = idPodatka;
-    infoHTML.innerHTML = "Podatak ime: " + nazivP + ", autor: "+nazivA + " spremljen!";
+    infoHTML.innerHTML = "Name: " + nazivP + ", author: "+nazivA + " saved!";
     setTimeout(function(){infoHTML.innerHTML = "";},2000);
   }else{
-      infoHTML.innerHTML = "Nevaljan unos!";
+      infoHTML.innerHTML = "Invalid input!";
         setTimeout(function(){infoHTML.innerHTML = "";},1000);
   }
 }
@@ -55,7 +55,7 @@ function obrisiPopis()
 function prijelaz()
 {
   if(localStorage.length == 0){
-    alert("Popis pjesama je prazan!");
+    alert("List is empty! Please enter song.");
     return false;
   }
   infoHTML.innerHTML = "";

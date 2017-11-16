@@ -8,7 +8,7 @@ html{
 body{
   min-height:100%;
   font-family:"Actor";
-  background-image: url("https://i.pinimg.com/originals/c2/ea/c3/c2eac33b23a5f42e25128b5c04ca19b0.jpg");
+  background-image: url("https://wallpapercave.com/wp/P3EtD4C.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,21 +58,8 @@ button{
   font-family: "Actor";
   margin-top:10px;
   padding: 1em 1em;
-  border-radius:10%;
-  max-height:80px;
-  max-width:100px;
-  color:white;
-  border: 2px solid grey;
-  background:none;
-  cursor:pointer;
 }
 
-button:hover{
-  background-color:#C0C000;
-  color:black;
-  border:2px solid black;
-  transition: 0.5s;
-}
 
 #obrisi, #obrisi:hover{
   background-color:#800000;
@@ -87,13 +74,11 @@ button:hover{
   float:left;
   width:33.333333%;
   text-align:center;
+  margin-top: 40px;
+  margin-bottom:30px;
 }
 
 
-#botuniAkcije{
-  width:100%;
-  text-align:center;
-}
 
 #videoPjesma{
   width:100%;
@@ -122,4 +107,6 @@ footer{
 
 footer img{
   padding-left: 30px;
+  max-height:50px;
+  max-width:70px;
 }
