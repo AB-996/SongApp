@@ -110,3 +110,43 @@ footer img{
   max-height:50px;
   max-width:70px;
 }
+
+@media all and (max-width:690px){
+
+  .nazivi{
+    width:100%;
+    font-size:1em;
+  }
+
+  .vrijednosti{
+    width:100%;
+    font-size:1em;
+  }
+
+  body h1{
+    font-size:1em;
+  }
+
+  button{
+    max-height:70px;
+    max-width:90px;
+    font-size:0.7em;
+  }
+
+  embed{
+    max-width:200px;
+    max-height:120px;
+    margin-top:10px;
+    border-radius:5%;
+    border:1px solid white;
+  }
+
+  footer{
+    font-size:0.8em;
+  }
+
+  footer img{
+    padding-left: 0px;
+  }
+
+}
