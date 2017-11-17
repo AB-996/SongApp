@@ -7,7 +7,8 @@ html{
 
 body{
   min-height:100%;
-  font-family:"Actor";
+  font-family:"Segoe UI" !important;
+  font-weight: 100;
   background-image: url("https://wallpapercave.com/wp/P3EtD4C.jpg");
   background-size: cover;
   background-position: center;
@@ -31,7 +32,7 @@ textarea{
 .nazivi{
   width:49%;
   float:left;
-  background-color:#FFFFC0;
+  background-color:skyblue;
   margin-top:10px;
   border: 1px solid black;
   border-top-left-radius: 5%;
@@ -44,7 +45,8 @@ textarea{
 .vrijednosti{
   width:49%;
   float:left;
-  background-color:#D58C70;
+  background-color:#170c82;
+  color:white;
   margin-top:10px;
   border: 1px solid black;
   border-top-right-radius: 5%;
@@ -54,8 +56,15 @@ textarea{
   text-align:center;
 }
 
+#prikazi{
+  box-shadow: 0px 0px 95px -6px rgba(242,233,242,1);
+  padding: 30px;
+  border-radius:10px;
+}
+
 button{
-  font-family: "Actor";
+  font-family: "Segoe UI" !important;
+  font-weight: 100;
   margin-top:10px;
   padding: 1em 1em;
 }
